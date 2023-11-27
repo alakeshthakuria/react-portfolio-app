@@ -1,0 +1,18 @@
+/* Projects.css */
+
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects-header {
+  font-size: 2rem;
+  color: #FFFAF0; /* Dark color for the header */
+}
+
+.projects-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #FFFAF0; /* Slightly lighter color for the content */
+}
