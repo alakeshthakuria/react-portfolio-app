@@ -1,16 +1,32 @@
 // ButtonComponent.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function ButtonComponent() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleButtonClick = () => {
+  const handleButtonClick = (targetRoute) => {
     navigate(targetRoute);
   };
 
   return (
-    <button onClick={handleButtonClick}>Click me</button>
+    <div>
+      <button
+        className="projects-button"
+        onClick={() => handleButtonClick('/about')}
+        disabled={location.pathname === '/about'}
+      >
+        Go to AboutMe
+      </button>
+      <button
+        className="about-me-button"
+        onClick={() => handleButtonClick('/projects')}
+        disabled={location.pathname === '/projects'}
+      >
+        Go to Projects
+      </button>
+    </div>
   );
 }
 

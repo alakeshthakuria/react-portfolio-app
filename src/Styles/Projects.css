@@ -16,3 +16,28 @@
   line-height: 1.6;
   color: #FFFAF0; /* Slightly lighter color for the content */
 }
+
+
+/* Projects.css */
+.project-description {
+  margin-top: 20px; /* Adjust the margin-top value to create the desired gap */
+}
+
+.project-description p {
+  margin-bottom: 20px; /* Adjust the margin-bottom value to create the desired gap between paragraphs */
+}
+
+/* Style the button */
+.projects-button {
+  background-color: #4CAF50; /* Green background color */
+  border: none; /* Remove border */
+  color: white; /* White text color */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it an inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 10px; /* Rounded corners */
+}
